@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-image: url("../img/background.png");
+}
+
+/*  header main and footer if exists    */
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: lightsalmon;
+    width: 100%;
+    height: 180px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.main {
+    margin-top: 180px;
+}
+
+/*  about tags  */
+h2 {
+    text-transform: uppercase;
+}
+
+button {
+    margin: auto;
+    font-family: 'Righteous', cursive;
+    border: solid black 2px;
+}
+
+a:hover{
+    color:red;
+}
+
+/*  header components   */
+.logo {
+    float: left;
+    display: flex;
+    height: 180px;
+    width: 60%;
+}
+
+#task-logo{
+    width: 30%;
+}
+
+#title-logo{
+    width: 70%;
+}
+
+
+
+
+/*  main components */
+.task-list {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.task {
+    display: flex;
+    background-color: lightsalmon;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px; 
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.task:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    z-index: 10;
+}
+
+
+.deleteButton {
+    background-color: lightskyblue;
+    padding: 0 3px 0 3px;
+    height: 20px;
+    overflow: hidden;
+}
+.task-adder {
+    display: flex;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    position: relative;
+    background-color: darkkhaki;
+    border: 2px dashed black;
+}
+.form {
+    display: flex;
+    position:relative;
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    justify-content: space-between;
+}
+.add-button {
+    background-color: gold;
+    border: 1px solid white;
+    text-align: center;
+    flex-grow: 1;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+.form > input[type="text"] {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 30px;
+    border: solid black 2px;
+}
+
+.add-button:hover {
+    transform: scale(1.5);
+    transition-duration: 0.8s;
+}
+
+
