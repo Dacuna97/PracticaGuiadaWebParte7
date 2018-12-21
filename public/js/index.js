@@ -77,4 +77,9 @@ $(() => {
     $(".add-button").on("click", (event) => {
         onAddButtonClick(event);
     });
+
+    // remove enter key effect
+    $(document).on("keypress", "form", (event) => { 
+        return event.keyCode != 13;
+    });
 });

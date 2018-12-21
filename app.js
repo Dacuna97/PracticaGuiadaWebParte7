@@ -50,7 +50,6 @@ app.get("/tasks",  function (request, response) {
 });
 
 app.post("/addTask", function (request, response) {
-    console.log(request.body);
     let newTask = {
         id: idCounter,
         text: request.body.text
