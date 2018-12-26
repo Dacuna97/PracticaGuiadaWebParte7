@@ -81,8 +81,8 @@ a:hover{
     height: 30px;
     border: 2px solid black;
     border-radius: 10px; 
-    justify-content: space-between;
     overflow: hidden;
+    position: relative;
 }
 
 .task:hover {
@@ -97,6 +97,9 @@ a:hover{
     padding: 0 3px 0 3px;
     height: 20px;
     overflow: hidden;
+    position: absolute;
+    top: 3px;
+    right:5px;
 }
 .task-adder {
     display: flex;
@@ -122,6 +125,9 @@ a:hover{
     flex-grow: 1;
     text-transform: uppercase;
     width: 20%;
+    height: 100%;
+    position: absolute;
+    right:0;
 }
 
 .form > input[type="text"] {

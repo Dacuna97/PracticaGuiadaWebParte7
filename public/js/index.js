@@ -49,7 +49,7 @@ function onRemoveButtonClick(event) {
 
 function onAddButtonClick(event) {
     let valor = $("form>input[type='text']").val();
-    if (valor != "") {
+    if (valor != "" && valor.length < 30) {
         let new_task = {
             text: valor
         };
@@ -67,6 +67,8 @@ function onAddButtonClick(event) {
                 alert("Se ha producido un error: " + errorThrown);
             }
         });
+    } else {
+        alert("La longitud no es la correcta");
     }
 }
 $(() => {
